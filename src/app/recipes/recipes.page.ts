@@ -25,7 +25,7 @@ export class RecipesPage implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-
+    this.recipeSub.unsubscribe();
   }
 
 }
